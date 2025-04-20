@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/image_combo">
+
+
+    <TextView
+        android:id="@+id/title_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="КОМБО-НАБОРЫ"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4B3B3B"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/desc_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Идеально подойдут для вечеринок\nи уютных встреч с друзьями. В\nнашем ассортименте\nпредставлены две коробочки с\nкомбо
+"
+        android:textSize="11sp"
+        android:textColor="#4B3B3B"
+        android:layout_below="@id/title_product"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/desc_combo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Bento + 2 cake to go"
+        android:textSize="11sp"
+        android:textColor="#4B3B3B"
+        android:layout_below="@id/desc_product"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="32dp"
+        android:drawableLeft="@drawable/point"
+        android:drawablePadding="8dp" />
+    <TextView
+        android:id="@+id/desc_combo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Bento + 5 cake to go"
+        android:textSize="11sp"
+        android:textColor="#4B3B3B"
+        android:layout_below="@id/desc_combo"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="32dp"
+        android:drawableLeft="@drawable/point"
+        android:drawablePadding="8dp" />
+
+</RelativeLayout>

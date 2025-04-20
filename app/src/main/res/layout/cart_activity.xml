@@ -1,0 +1,535 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FAF0F0"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ВЕРХНИЙ БЛОК -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <ImageButton
+                    android:background="#FAF0F0"
+                    android:id="@+id/backButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="64dp"
+                    android:contentDescription="Назад"
+                    android:src="@drawable/strelka" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bentonos"
+                android:textColor="#4B3B3B"
+                android:textSize="28sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="-44dp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="кондитерская по food-флористике\nи десертам на заказ"
+                android:textAlignment="center"
+                android:textColor="#4B3B3B"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp" />
+        </LinearLayout>
+
+        <!-- БЕНТО -->
+        <LinearLayout
+            android:id="@+id/item_bento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+
+                <ImageView
+                    android:id="@+id/image_bento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element1" />
+
+                <TextView
+                    android:id="@+id/_bento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="БЕНТО"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/quantity_bento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+
+                <TextView
+                    android:id="@+id/price_bento"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="1400₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- БЕНТО MAXI -->
+        <LinearLayout
+            android:id="@+id/item_bentomaxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_bentomaxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element2" />
+
+                <TextView
+                    android:id="@+id/title_bentomaxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="БЕНТО MAXI"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    android:textColor="#4B3B3B" />
+
+                <TextView
+                    android:id="@+id/quantity_bentomaxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_bentomaxi"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="2700₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- CAKE TO GO 3 ШТ -->
+        <LinearLayout
+            android:id="@+id/item_togo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_togo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element3" />
+
+                <TextView
+                    android:id="@+id/_togo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAKE TO GO\n3шт"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity_togo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_togo3"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="1700₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+        <!-- CAKE TO GO 6 ШТ -->
+        <LinearLayout
+            android:id="@+id/item_togo6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_togo6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element4" />
+
+                <TextView
+                    android:id="@+id/_togo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAKE TO GO\n6шт"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity_togo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_togo6"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="3200₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+        <!-- CAKE TO GO 9 ШТ -->
+        <LinearLayout
+            android:id="@+id/item_togo9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_togo9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element5" />
+
+                <TextView
+                    android:id="@+id/_togo9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAKE TO GO\n9шт"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity_togo9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_togo9"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="4900₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+        <!-- CAKE TO GO 9 ШТ -->
+        <LinearLayout
+            android:id="@+id/item_combo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_combo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element6" />
+
+                <TextView
+                    android:id="@+id/_combo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="КОМБО НАБОР\n2шт"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity_combo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_combo2"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="2300₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/item_combo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="0dp"
+            android:padding="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+                <ImageView
+                    android:id="@+id/image_combo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/element7" />
+
+                <TextView
+                    android:id="@+id/_combo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="КОМБО НАБОР\n5шт"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity_combo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="×0"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/round_pink"
+                    android:padding="4dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="145dp" />
+                <TextView
+                    android:id="@+id/price_combo5"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="80dp"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/montserrat_black"
+
+
+                    android:padding="4dp"
+                    android:text="3900₽"
+                    android:textColor="#4B3B3B"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/price_total"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat_black"
+            android:padding="4dp"
+            android:text="Сумма заказа: 0₽"
+            android:textColor="#4B3B3B"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/button_create_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#FFB6B6"
+            android:text="Оформить заказ"
+            android:textColor="#4B3B3B"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_black"
+            android:textStyle="bold"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

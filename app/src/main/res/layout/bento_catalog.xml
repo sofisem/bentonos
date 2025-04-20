@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/item_rounded1"
+    android:paddingBottom="-60dp">
+
+
+    <!-- Надпись "BENTO" сверху -->
+    <TextView
+        android:id="@+id/title_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BENTO"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4B3B3B"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Описание снизу -->
+    <TextView
+        android:id="@+id/desc_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Тортики 450-500 гр (диаметр 10 см)\n– идеальный мини-торт для одного\nили на двоих. Лёгкий, воздушный\nи безумно вкусный!"
+        android:textSize="11sp"
+        android:textColor="#4B3B3B"
+        android:layout_below="@id/title_product"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAF0F0"
+        android:padding="16dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <ImageButton
+                    android:background="#FAF0F0"
+                    android:id="@+id/backButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="64dp"
+                    android:contentDescription="Назад"
+                    android:src="@drawable/strelka" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bentonos"
+                android:textColor="#4B3B3B"
+                android:textSize="28sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="-44dp" />
+
+            <!-- Подзаголовок -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="кондитерская по food-флористике\nи десертам на заказ"
+                android:textAlignment="center"
+                android:textColor="#4B3B3B"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- Карточка -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:elevation="2dp"
+                android:background = "@drawable/card"
+                android:backgroundTint="#FFFFFF"
+                android:clipToPadding="false"
+                android:layout_marginBottom="32dp"
+                android:backgroundTintMode="src_in">
+
+                <!-- Заголовок секции -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="БЕНТО MAXI"
+                    android:fontFamily="@font/montserrat_black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Изображения -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maxi1"
+                        android:layout_marginEnd="4dp" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maxi2"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="4dp" />
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maxi3"
+                        android:layout_marginStart="4dp" />
+                </LinearLayout>
+
+                <!-- Описание -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="В базовую стоимость входит:"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#4B3B3B"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" простой декор - надпись, сердечки"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="2dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" ложечка, свечка"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="2dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" бенто-бокс в прозрачном пакете"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Дополнительные условия:"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="12sp"
+                    android:textColor="#4B3B3B"
+
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" доплата за срочность заказа"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="2dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" заказы день в день идут +30% к цене"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="2dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" в случае отмены заказа менее, чем за 3 дня,\n предоплата не возвращается"
+                    android:textColor="#4B3B3B"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/point"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Блок с ценой и кнопкой -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/but1400"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#EFEAEA"
+                    android:backgroundTintMode="src_in"
+                    android:clipToPadding="false"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_gravity="center"
+                    android:weightSum="2"
+                    android:divider="?android:attr/dividerHorizontal"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="2200 ₽"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textStyle="bold"
+                        android:textColor="#4B3B3B"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"/>
+
+                    <Button
+                        android:id="@+id/orderButton"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+
+                        android:layout_weight="1"
+                        android:backgroundTint="#4B3B3B"
+                        android:fontFamily="@font/montserrat_regular"
+
+                        android:padding="8dp"
+                        android:text="заказать"
+                        android:textColor="#FFFFFF" />
+
+
+                </LinearLayout>
+                <include layout="@layout/cart_bar"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
